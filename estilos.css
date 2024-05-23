@@ -1,0 +1,149 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #4d2a8e;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    color: #694caf;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 16px;
+    color: #7a6d96;
+    margin-bottom: 15px;
+}
+
+input[type="file"], input[type="text"], textarea {
+    width: 50%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #7a6d96;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #4d2a8e;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #694caf;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4d2a8e;
+}
+
+pre {
+    background-color: #f9f9f9;
+    padding: 12px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+a {
+    color: #694caf;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #4d2a8e;
+    text-decoration: underline;
+}
+
+/* Estilos del botón de exportar */
+.Download-button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 12px 20px;
+    color: white;
+    background: #7a6d96;
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em rgba(59, 48, 78, 0.527);
+    letter-spacing: 0.05em;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.Download-button svg {
+    margin-right: 8px;
+    width: 25px;
+}
+
+.Download-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em rgba(88, 71, 116, 0.627);
+}
+
+.Download-button:active {
+    box-shadow: 0 0.3em 1em -0.5em rgba(88, 71, 116, 0.627);
+}
+
+.Download-button::before {
+    content: "";
+    width: 4px;
+    height: 40%;
+    background-color: white;
+    position: absolute;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    left: 0;
+    transition: all 0.2s;
+}
+
+.Download-button::after {
+    content: "";
+    width: 4px;
+    height: 40%;
+    background-color: white;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    right: 0;
+    transition: all 0.2s;
+}
+
+.Download-button:hover::before,
+.Download-button:hover::after {
+    height: 60%;
+}
